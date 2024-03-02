@@ -2,63 +2,84 @@
   text-align: center;
   padding: 20px;
   background-color: #fff;
-  h1 + p {
-    position: relative;
-    left: 580px;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  p {
     font-size: 24px;
-    width: 870px;
     padding: 20px;
     color: #949da3c5;
+    width: 60%;
   }
 }
+
 .mainpart {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-.mainpart2 {
-  display: flex;
-}
+
 .box-1 {
-  position: relative;
-  left: 10px;
-  width: 500px;
-  height: 550px;
   box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45),
     25px 0 20px -20px rgba(0, 0, 0, 0.45);
   border-radius: 15px;
-  margin-left: 150px;
-  margin-top: 50px;
   border: 0 solid #e5e7eb;
   color: #949da3c5;
+
+  width: 30%;
   img {
-    width: 500px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+    width: 100%;
+    opacity: 0.4;
+    transition: all 0.5s;
   }
   h1 {
     font-weight: bold;
     color: black;
   }
 }
+
+.box-1:hover img {
+  opacity: 1;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
 span {
-  position: relative;
-  left: 305px;
   color: orange;
   font-size: 24px;
   bottom: 25px;
 }
 h2 {
-  position: relative;
-  left: 15px;
   color: orange;
   font-size: 27px;
   top: 15px;
 }
+
+.content {
+  padding: 20px;
+}
+.price-sec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .rating {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 15px;
-  margin-right: 85px;
   font-size: 24px;
   color: rgba(0, 0, 0, 0.904);
 }
